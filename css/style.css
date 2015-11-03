@@ -1,0 +1,138 @@
+/* ========= LOGO ========= */
+
+#logo {
+  text-align: center;
+  margin-top: 35px; 
+}
+
+#logo p {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5px;
+  font-family: 'Gloria Hallelujah', cursive;
+  margin-top: -30px;
+  font-size: 40px; 
+}
+
+/* ========= END ========= */
+
+/* ========= MAIN CONTAINERS ========= */
+
+#container {
+  width: 1000px;
+  height: 520px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-flow: nowrap;
+  overflow-y: hidden;
+  background-image: url(cake-pattern.jpg); 
+}
+
+.containers {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  position: relative;
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid black;
+}
+
+#left {
+  width: 250px;
+  height: 500px;
+}
+
+#main {
+  width: 400px;
+  height: 500px;
+  background-color: rgba(255, 255, 255, 0.8); 
+}
+
+#right {
+  width: 250px;
+  height: 500px;
+}
+
+/* ========= END ========= */
+
+/* ========= TOWERS TO APPEND ========= */
+
+.tower {
+  width: 300px;
+  height: 40px;
+  border-radius: 8px 8px 2px 2px;
+  position: absolute;
+}
+
+#startTower {
+  background-image: url(cake-base.jpg);
+  bottom: 0;
+  left: 50px;
+}
+
+#topTower {
+  border: 4px dashed #a58170;
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Gloria Hallelujah', cursive; 
+}
+
+#lastTower {
+  position: absolute; }
+
+/* ========= END ========= */
+
+/* ========= POP UPS ========= */
+
+.emojis {
+  width: 150px;
+  height: 150px;
+  z-index: 5;
+  position: absolute;
+  left: 125px;
+  top: 280px; 
+}
+
+#scoreShows {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 0px;
+  left: 125px;
+  color: #f44c8b;
+  text-align: center;
+  font-size: 100px;
+  font-family: 'Gloria Hallelujah', cursive; }
+
+#winShows {
+  width: 70px;
+  height: 70px;
+  z-index: 5;
+  position: absolute;
+  top: 189.6px; }
+
+#highScoreWord {
+  width: 250px;
+  height: 60px;
+  margin-top: 25px;
+  background-color: rgba(243, 202, 218, 0.9);
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 30px;
+  text-align: center;
+  top: 5px; }
+
+#highScore {
+  width: 250px;
+  height: 100px;
+  background-color: rgba(243, 202, 218, 0.9);
+  position: absolute;
+  color: #f44c8b;
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Gloria Hallelujah', cursive; }
+
