@@ -66,15 +66,15 @@ $(function(){
 		$(scoreBox).attr('id', 'scoreShows'); 
 		$('#main').append(scoreBox);	
 
-		$(goodBox).attr({'id': 'goodShows', 'src': 'css/emoji1.jpg', 'class': 'emojis'}); 
+		$(goodBox).attr({id: 'goodShows', 'src': 'css/emoji1.jpg', class: 'emojis'}); 
 		$('#main').append(goodBox);
 		$('#goodShows').hide();
 
-		$(badBox).attr({'id': 'badShows', 'src': 'css/emoji2.jpg', 'class': 'emojis'}); 
+		$(badBox).attr({id: 'badShows', 'src': 'css/emoji2.jpg', class: 'emojis'}); 
 		$('#main').append(badBox);
 		$('#badShows').hide();
 
-		$(omgBox).attr({'id': 'omgShows', 'src': 'css/emoji3.jpg', 'class': 'emojis'}); 
+		$(omgBox).attr({id: 'omgShows', 'src': 'css/emoji3.jpg', class: 'emojis'}); 
 		$('#main').append(omgBox);
 		$('#omgShows').hide();
 
@@ -135,7 +135,7 @@ $(function(){
 		$(movingBox).remove();
 
 		boxCount.push(document.createElement('div'));
-		$(boxCount[j]).attr({'id': 'lastTower-' + j, 'class': 'tower'});
+		$(boxCount[j]).attr({id: 'lastTower-' + j, class: 'tower'});
 		$('#main').append(boxCount[j]);
 
 		$(boxCount[j]).css({
@@ -291,6 +291,8 @@ $(function(){
 	}
 
 	function addCherry () {
+		playerTurn = 3; // PREVENTS ADDITIONAL LAYING OF CAKES
+
 		if (i > 5) {
 			$('#winShows').css('left', (visLeft[j]));
 			$('#winShows').show().effect('pulsate');

@@ -1,4 +1,4 @@
-/* ========= LOGO ========= */
+/* ======= LOGO HEADER ======= */
 
 #logo {
   text-align: center;
@@ -6,17 +6,15 @@
 }
 
 #logo p {
-  margin-left: auto;
-  margin-right: auto;
+  margin-top: -30px;
   margin-bottom: 5px;
   font-family: 'Gloria Hallelujah', cursive;
-  margin-top: -30px;
   font-size: 40px; 
 }
 
-/* ========= END ========= */
+/* ======= END ======= */
 
-/* ========= MAIN CONTAINERS ========= */
+/* ======= CONTAINERS ======= */
 
 #container {
   width: 1000px;
@@ -37,9 +35,7 @@
   margin-top: 10px;
   margin-bottom: 10px;
   position: relative;
-  display: flex;
   background-color: rgba(255, 255, 255, 0.5);
-  border: 1px solid black;
 }
 
 #left {
@@ -50,53 +46,59 @@
 #main {
   width: 400px;
   height: 500px;
-  background-color: rgba(255, 255, 255, 0.8); 
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 #right {
   width: 250px;
-  height: 500px;
+  height: 500px; 
+  background-color: rgba(255, 255, 255, 0.9);
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 12px;
+  box-sizing: border-box;
+  padding: 10px;
 }
 
-/* ========= END ========= */
+#right h3 {
+  font-weight: bold;
+  font-size: 15px;
+}
 
-/* ========= TOWERS TO APPEND ========= */
+/* ======= END ======= */
+
+/* ======= TOWERS ======= */
 
 .tower {
-  width: 300px;
-  height: 40px;
   border-radius: 8px 8px 2px 2px;
   position: absolute;
 }
 
 #startTower {
+  width: 300px;
+  height: 40px;
   background-image: url(cake-base.jpg);
+  position: absolute;
   bottom: 0;
-  left: 50px;
+  left: 50px; 
 }
 
 #topTower {
+  width: 300px;
+  height: 40px;
   border: 4px dashed #a58170;
+  position: absolute;
   text-align: center;
   font-size: 20px;
   font-family: 'Gloria Hallelujah', cursive; 
 }
 
 #lastTower {
-  position: absolute; }
-
-/* ========= END ========= */
-
-/* ========= POP UPS ========= */
-
-.emojis {
-  width: 150px;
-  height: 150px;
-  z-index: 5;
-  position: absolute;
-  left: 125px;
-  top: 280px; 
+  position: absolute; 
 }
+
+/* ======= END ======= */
+
+/* ======= POP UPS ======= */
 
 #scoreShows {
   width: 150px;
@@ -107,7 +109,17 @@
   color: #f44c8b;
   text-align: center;
   font-size: 100px;
-  font-family: 'Gloria Hallelujah', cursive; }
+  font-family: 'Gloria Hallelujah', cursive; 
+}
+
+.emojis {
+  width: 150px;
+  height: 150px;
+  z-index: 5;
+  position: absolute;
+  left: 125px;
+  top: 280px; 
+}
 
 #winShows {
   width: 70px;
@@ -136,3 +148,4 @@
   font-size: 50px;
   font-family: 'Gloria Hallelujah', cursive; }
 
+/* ======= END ======= */
